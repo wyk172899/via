@@ -26,9 +26,17 @@
     transform: rotate(360deg);
   }
 }
+@keyframes logo-backspin {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
 
 @media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
+  :nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
   }
 }

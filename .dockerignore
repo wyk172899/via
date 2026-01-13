@@ -1,9 +1,5 @@
+node_modules
 .git
-.yarn/unplugged
-.yarn/build-state.yml
-.yarn/install-state.gz
-.pnp.*
-node_modules/
-Dockerfile
-docker-compose.yml
-.gitignore
+dist
+build
+.DS_Store

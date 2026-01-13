@@ -1,11 +1,14 @@
 version: '3.8'
 services:
-  react-app:
+  app:
     build: .
     ports:
       - "3000:3000"
     volumes:
       - .:/app
-      - /app/node_modules
+      - /app/.yarn/cache
+      - /app/.yarn/unplugged
     environment:
-      - CHOKIDAR_USEPOLLING=true
+      - NODE_ENV=development
+    tty: true
+    stdin_open: true
